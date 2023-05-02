@@ -1,0 +1,13 @@
+<form class="form-group" [formGroup]="myForm" (ngSubmit)="submitForm(myForm)" >
+  <input type="text" placeholder="Name" class="from-control"   [formControlName]="'name'"><br><br>
+  <input type="text" placeholder="SirName" class="from-control" [formArrayName]="'sirName'">
+  <br><br>
+  <button class="btn btn-primary" type="button"(click)="add()">add</button>
+  <div formArrayName="hobbies">
+
+    <div class="form-group" *ngFor="let x of hobbyControls; let i = index">
+      <input type="text" class="from-control" [formControlName] = "'i'">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-warning mx-2">submit</button>
+</form>

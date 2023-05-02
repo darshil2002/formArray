@@ -1,0 +1,23 @@
+.mainDiv{
+  outline: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+/* div div{
+  outline: 2px solid purple;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+} */
+
+@media only screen and (max-width: 600px) {
+  .mainDiv {
+    background-color: red;
+  }
+  .mainDiv div {
+    background-color: rgb(59, 11, 11);
+  }
+}
